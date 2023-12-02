@@ -1,0 +1,686 @@
+[
+    {
+        "id": "f9330d96084e6a97",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "be89a4cc0828a0f5",
+        "type": "mqtt in",
+        "z": "f9330d96084e6a97",
+        "name": "",
+        "topic": "esp32/sensor1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "bd1c928e57c3ac0f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 180,
+        "wires": [
+            [
+                "6719b334718e083d"
+            ]
+        ]
+    },
+    {
+        "id": "6719b334718e083d",
+        "type": "ui_text",
+        "z": "f9330d96084e6a97",
+        "group": "478a415e236af9ba",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "sensor1",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 440,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "c69767bdfe28b2bf",
+        "type": "mqtt in",
+        "z": "f9330d96084e6a97",
+        "name": "",
+        "topic": "esp32/sensor2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "bd1c928e57c3ac0f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 240,
+        "wires": [
+            [
+                "79dfd72ce56baac6"
+            ]
+        ]
+    },
+    {
+        "id": "79dfd72ce56baac6",
+        "type": "ui_text",
+        "z": "f9330d96084e6a97",
+        "group": "478a415e236af9ba",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "sensor2",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 440,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "a7743deb58534df2",
+        "type": "mqtt in",
+        "z": "f9330d96084e6a97",
+        "name": "",
+        "topic": "esp32/sensor3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "bd1c928e57c3ac0f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 300,
+        "wires": [
+            [
+                "8f38583b61d2e129"
+            ]
+        ]
+    },
+    {
+        "id": "8f38583b61d2e129",
+        "type": "ui_text",
+        "z": "f9330d96084e6a97",
+        "group": "478a415e236af9ba",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "sensor3",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 440,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "96ad4bf2d20276bc",
+        "type": "mqtt in",
+        "z": "f9330d96084e6a97",
+        "name": "",
+        "topic": "esp32/lights1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "bd1c928e57c3ac0f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 420,
+        "wires": [
+            [
+                "2d8b63b161c8ef77"
+            ]
+        ]
+    },
+    {
+        "id": "2d8b63b161c8ef77",
+        "type": "ui_led",
+        "z": "f9330d96084e6a97",
+        "order": 8,
+        "group": "e323ee54d18bd09d",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 430,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "e1a72137b4b1220c",
+        "type": "mqtt in",
+        "z": "f9330d96084e6a97",
+        "name": "",
+        "topic": "esp32/lights2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "bd1c928e57c3ac0f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 480,
+        "wires": [
+            [
+                "7484bd92bbb67817"
+            ]
+        ]
+    },
+    {
+        "id": "7484bd92bbb67817",
+        "type": "ui_led",
+        "z": "f9330d96084e6a97",
+        "order": 8,
+        "group": "37681b4cec9466c9",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 430,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "bfcd5818e1267edf",
+        "type": "mqtt in",
+        "z": "f9330d96084e6a97",
+        "name": "",
+        "topic": "esp32/lights3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "bd1c928e57c3ac0f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 540,
+        "wires": [
+            [
+                "587370ab16a2c725"
+            ]
+        ]
+    },
+    {
+        "id": "587370ab16a2c725",
+        "type": "ui_led",
+        "z": "f9330d96084e6a97",
+        "order": 8,
+        "group": "5e280bd669b84e2f",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 430,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "a6df76f9a172b46a",
+        "type": "mqtt in",
+        "z": "f9330d96084e6a97",
+        "name": "",
+        "topic": "esp32/lights4",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "bd1c928e57c3ac0f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 600,
+        "wires": [
+            [
+                "ad588bf02b032b04"
+            ]
+        ]
+    },
+    {
+        "id": "ad588bf02b032b04",
+        "type": "ui_led",
+        "z": "f9330d96084e6a97",
+        "order": 8,
+        "group": "11648257c48e5ac4",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 430,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "b5ac8b0c43d39fb8",
+        "type": "mqtt in",
+        "z": "f9330d96084e6a97",
+        "name": "",
+        "topic": "esp32/lights5",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "bd1c928e57c3ac0f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 660,
+        "wires": [
+            [
+                "25c0535e1637a61e"
+            ]
+        ]
+    },
+    {
+        "id": "25c0535e1637a61e",
+        "type": "ui_led",
+        "z": "f9330d96084e6a97",
+        "order": 8,
+        "group": "5b64cf9de4df09b3",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 430,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "0a7495afcefb4f4c",
+        "type": "mqtt in",
+        "z": "f9330d96084e6a97",
+        "name": "",
+        "topic": "esp32/lights6",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "bd1c928e57c3ac0f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 720,
+        "wires": [
+            [
+                "a41dae98a480b641"
+            ]
+        ]
+    },
+    {
+        "id": "a41dae98a480b641",
+        "type": "ui_led",
+        "z": "f9330d96084e6a97",
+        "order": 8,
+        "group": "3a25331353d30c49",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 430,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "865cc7f257b4eaa6",
+        "type": "ui_led",
+        "z": "f9330d96084e6a97",
+        "order": 8,
+        "group": "69c9c35be58c6638",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 430,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "84d7424fbdb627e8",
+        "type": "mqtt in",
+        "z": "f9330d96084e6a97",
+        "name": "",
+        "topic": "esp32/lights8",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "bd1c928e57c3ac0f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 840,
+        "wires": [
+            [
+                "9751e88d8257ec6c"
+            ]
+        ]
+    },
+    {
+        "id": "05e1f1b11c0a653d",
+        "type": "mqtt in",
+        "z": "f9330d96084e6a97",
+        "name": "",
+        "topic": "esp32/lights7",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "bd1c928e57c3ac0f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 780,
+        "wires": [
+            [
+                "865cc7f257b4eaa6"
+            ]
+        ]
+    },
+    {
+        "id": "9751e88d8257ec6c",
+        "type": "ui_led",
+        "z": "f9330d96084e6a97",
+        "order": 8,
+        "group": "80e9982571569444",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 430,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "bd1c928e57c3ac0f",
+        "type": "mqtt-broker",
+        "name": "broker",
+        "broker": "192.168.137.131",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "478a415e236af9ba",
+        "type": "ui_group",
+        "name": "Sensores",
+        "tab": "844f4b5e0c3ba27d",
+        "order": 10,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e323ee54d18bd09d",
+        "type": "ui_group",
+        "name": "Semáforo 1",
+        "tab": "844f4b5e0c3ba27d",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "37681b4cec9466c9",
+        "type": "ui_group",
+        "name": "Semáforo 2",
+        "tab": "844f4b5e0c3ba27d",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5e280bd669b84e2f",
+        "type": "ui_group",
+        "name": "Semáforo 3",
+        "tab": "844f4b5e0c3ba27d",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "11648257c48e5ac4",
+        "type": "ui_group",
+        "name": "Semáforo 4",
+        "tab": "844f4b5e0c3ba27d",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5b64cf9de4df09b3",
+        "type": "ui_group",
+        "name": "Semáforo 5",
+        "tab": "844f4b5e0c3ba27d",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3a25331353d30c49",
+        "type": "ui_group",
+        "name": "Semáforo 6",
+        "tab": "844f4b5e0c3ba27d",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "69c9c35be58c6638",
+        "type": "ui_group",
+        "name": "Semáforo 7",
+        "tab": "844f4b5e0c3ba27d",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "80e9982571569444",
+        "type": "ui_group",
+        "name": "Semáforo 8",
+        "tab": "844f4b5e0c3ba27d",
+        "order": 9,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "844f4b5e0c3ba27d",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
